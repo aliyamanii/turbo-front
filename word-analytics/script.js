@@ -8,7 +8,7 @@ textAreaEl.addEventListener('input', function() {
     //input validation
     if (textAreaEl.value.includes('<script>')){
         alert('Oi cut that out!');
-        textAreaEl.value = 'Skibidi ba um dada'
+        textAreaEl.value = textAreaEl.value.replace('<script>', '')
     }
     //determine new numbers
     let wordCount = textAreaEl.value.split(' ').length;
