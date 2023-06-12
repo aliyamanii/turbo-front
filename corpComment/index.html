@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="https://img.icons8.com/?size=512&id=50832&format=png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+
+    <title>CorpComment -- Give Feedback, Publicly</title>
+</head>
+
+<body class="body">
+
+    <div class="body__container">
+        <footer class="footer">
+            <small class="copyright">
+                <p class="copyright__text">© Copyright by <a href="https://github.com/aliyamanii" class="copyright__link"
+                        target="_blank">aliyamanii</a> <i class="fa-solid fa-square-up-right copyright__icon"></i>
+                    Intended for learning or your portfolio.</p>
+                <p class="copyright__text"><span class="u-bold u-italic">Not allowed</span> to use as your own teaching
+                    material.</p>
+            </small>    
+        </footer>
+
+        <main class="app">
+            <header class="header">
+                <img src="https://images.unsplash.com/photo-1633907284646-7abf4a195875?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" alt="pattern" class="header__pattern">``
+                <h1 class="first-heading">Give Feedback. <span class="u-italic u-transparent">Publicly.</span></h1>
+                <form action="#" class="form">
+                    <textarea class="form__textarea" id="textarea" spellcheck="false" maxlength="150" type="text"
+                        placeholder="Enter feedback"></textarea>
+                    <label for="textarea" class="form__label">Enter your feedback here, remember to <span
+                            class="u-medium">#hashtag</span> the company <i
+                            class="fa-solid fa-pen form__icon"></i></label>
+                    <div class="form__bottom">
+                        <p class="counter u-italic">150</p>
+                        <button class="submit-btn">
+                            <span class="submit-btn__text">Submit</span>
+                        </button>
+                    </div>
+                </form>
+            </header>
+
+            <ol class="feedbacks">
+            </ol>
+        </main>
+
+        <ul class="hashtags">
+            <li class="hashtags__item">
+                <button class="hashtag">#Nike</button>
+            </li>
+            <li class="hashtags__item">
+                <button class="hashtag">#Starbucks</button>
+            </li>
+            <li class="hashtags__item">
+                <button class="hashtag">#Netflix</button>
+            </li>
+            <li class="hashtags__item">
+                <button class="hashtag">#Amazon</button>
+            </li>
+            <li class="hashtags__item">
+                <button class="hashtag">#Microsoft</button>
+            </li>
+            <li class="hashtags__item">
+                <button class="hashtag">#Adidas</button>
+            </li>
+            <li class="hashtags__item">
+                <button class="hashtag">#McDonald's</button>
+            </li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>
