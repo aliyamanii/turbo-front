@@ -1,4 +1,6 @@
 // ## GLOBAL ##
+const maxChars = 150;
+
 const textAreaEl = document.querySelector('.form__textarea');
 const counterEl = document.querySelector('.counter');
 const formEl = document.querySelector('.form');
@@ -8,9 +10,6 @@ const submitButtonEl = document.querySelector('.submit-btn');
 // ## COUTNER COMPONENT ##
 
 const inputHandler = () => {
-    //determine maximum number of characters
-    const maxChars = 150;
-    //determine number of current characters
     const currentChars = textAreaEl.value.length;
     //calculate the number of remaining characters
     const remainingChars = maxChars - currentChars;
@@ -70,7 +69,7 @@ const submitHandler = event => {
                 <p class="feedback__company">${company}</p>
                 <p class="feedback__text">${text}</p>
             </div>
-            <p class="feedback__date">${daysAgo}</p>
+            <p class="feedback__date">${daysAgo === 0 ? 'NEW' : `${daysAgo}d`}</p>
         </li>
 
    `;
@@ -82,7 +81,7 @@ const submitHandler = event => {
    //blur submit button
     submitButtonEl.blur();
    //reset counter
-   counterEl.textContent = '150';
+   counterEl.textContent = maxChars;
 
 };
 

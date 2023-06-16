@@ -119,14 +119,17 @@ button {
 /* HEADER */
 .header {
     height: 277px;
-    background-color: #121618;
+    background-image: linear-gradient(to right,
+            rgba(101, 0, 163, 0.9),
+            rgba(24, 120, 175, 0.9)),
+        url('https://images.unsplash.com/photo-1633907284646-7abf4a195875?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80');
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
     z-index: 999;
-    backface-visibility: hidden;
+    /* backface-visibility: hidden; */
     transform: translateZ(0);
     box-shadow: rgba(12, 17, 21, 0.5) 0px 0px 50px;
     padding-bottom: 3px;
@@ -141,7 +144,6 @@ button {
     background-image: linear-gradient(to right,
             rgba(101, 0, 163, 0.9),
             rgba(24, 120, 175, 0.9)),
-        url('https://images.unsplash.com/photo-1633907284646-7abf4a195875?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80');
 
 }
 
