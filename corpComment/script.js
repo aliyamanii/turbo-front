@@ -1,5 +1,6 @@
 // ## GLOBAL ##
 const maxChars = 150;
+const BASE_API_URL = 'https://bytegrad.com/course-assets/js/1/api';
 
 const textAreaEl = document.querySelector('.form__textarea');
 const counterEl = document.querySelector('.counter');
@@ -86,3 +87,5 @@ const submitHandler = event => {
 };
 
 formEl.addEventListener('submit', submitHandler);
+
+fetch()
