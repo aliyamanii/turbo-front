@@ -24,6 +24,19 @@ button {
     }
 }
 
+@keyframes fade-in-from-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+}
+
 .app {
     font-family: 'Lato', sans-serif;
     font-size: 15px;
@@ -95,8 +108,74 @@ button {
 
 .sidebar {
     background-color: #10171A;
-    flex: 1;
     width: 75px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+
+}
+
+.menu__button {
+    padding: 19px 0;
+    color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    transition: all 0.4s;
+    animation: fade-in-from-left 0.5s;
+}
+
+.menu__button:hover {
+    background-color: #2B363B;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu__button:focus {
+    background-color: #2B363B;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu__button--active {
+    background-color: #2B363C;
+    color: #fff;
+    position: relative;
+}
+
+.menu__button--active::before {
+    content: "";
+    width: 3px;
+    height: 100%;
+    background-color: #375BB6;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.menu__icon {
+    font-size: 18px;
+    margin-bottom: 3px;
+
+}
+
+.menu__text {
+    font-weight: 500;
+    font-size: 12px;
+}
+.footer {
+    margin-top: auto;
+    margin-bottom: 60px;
+    transform: rotate(-90deg);
+}
+
+.copyright {
+    color: rgba(255, 255, 255, 0.15);
+    font-size: 12px;
+    white-space: nowrap;
 }
 
 .panel {
